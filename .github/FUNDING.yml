@@ -1,0 +1,8 @@
+# Funding sources shown on the GitHub repo sidebar.
+# Once forgemoss is set up on GitHub Sponsors / Open Collective, add the slugs:
+
+github: [forgemoss]
+# open_collective: forgemoss
+# patreon: forgemoss
+# ko_fi: forgemoss
+# custom: ['https://forgemoss.com/sponsor']
